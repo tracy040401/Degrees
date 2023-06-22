@@ -93,30 +93,6 @@ def main():
             print(f"{i + 1}: {person1} and {person2} starred in {movie}")
 
 
-
-def shortest_path(source, target):
-    """
-    Returns the shortest list of (movie_id, person_id) pairs
-    that connect the source to the target.
-
-    If no possible path, returns None.
-
-    list = []
-    for person_id, movie_id in neighbors_for_person(person_id_for_name(source)):
-        if person_id_for_name(target) == person_id:
-            list.append((movie_id, person_id))
-            return list
-    value = 1
-    for person_id, movie_id in neighbors_for_person(person_id_for_name(source)):
-        res = shortest_path(person_id, target)
-        if len(res) <= value & len(res > 0):
-            list.append(res)
-    if len(list) == 0:
-        return None
-    else:
-        return list
-
-"""
 def shortest_path(source, target):
     """
     Returns the shortest list of (movie_id, person_id) pairs
